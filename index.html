@@ -20,6 +20,10 @@
         margin: 0%;
         padding: 20px;
     }
+    body.dark {
+    --bg-color: #000000; /* Couleur de fond pour le thème sombre */
+    --text-color: #ffffff; /* Couleur du texte pour le thème sombre */
+}
     .theme-swich{
         position: fixed;
         top: 20px;
@@ -38,10 +42,12 @@
         margin: 100px auto;
         text-align: center;
     }
+    .element{
+        background-color: var(--bg-color);
+    }
 
 </style>
 <body>
-
 
     <div class="theme-swich">
         <button id="themeToggle">Changer le thème</button>
